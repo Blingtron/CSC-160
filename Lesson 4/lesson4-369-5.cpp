@@ -25,7 +25,7 @@ int main()
     fileIn.open("hw4pr02input.txt");
     fileErrorCheck(fileIn);
 
-    cout << "Here is some advice from a fellow programmer:\n";
+    cout << "Here is some advice from a fellow programmer:\n\n";
     printFile(fileIn);
 
     fileOut.open("hw4pr02input.txt");

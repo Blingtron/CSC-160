@@ -12,8 +12,11 @@ using namespace std;
 
 int main()
 {
+    cout << "Enter the file name (less than 15 characters).\n";
 	ifstream in_stream;
-	in_stream.open("hw4pr01input.txt");
+	char filename[16];
+	cin >> filename;
+	in_stream.open(filename);
 
 	// If file doesn't exist
 	if (in_stream.fail())
