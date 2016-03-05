@@ -1,5 +1,5 @@
 //file name: lesson5_614_7.cpp
-//last changed: 3/3/2016
+//last changed: 3/5/2016
 //student: Shane Kirkley
 
 //description: Defines a class rational that uses rational numbers as objects, with functions that do operations and stuff.
