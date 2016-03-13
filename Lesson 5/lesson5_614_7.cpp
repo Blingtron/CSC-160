@@ -182,7 +182,6 @@ void rational::output(ostream& outstream)
 
 bool rational::less(rational x)
 {
-    //(a/b) < (c/d) means (a * d) < (c * b)
     if ((numerator * x.denominator) < (x.numerator * denominator))
     {
         return true;
@@ -233,8 +232,6 @@ void rational::reduce()
 
 rational rational::add(rational x, bool reduce)
 {
-    //a/b + c/d = (a * d + b * c) / (b * d)
-
     rational temp ;
     temp.numerator = (numerator * x.denominator + denominator * x.numerator);
     temp.denominator = (denominator * x.denominator);
@@ -248,8 +245,6 @@ rational rational::add(rational x, bool reduce)
 
 rational rational::sub(rational x, bool reduce)
 {
-    //a/b - c/d = (a * d - b * c) / (b * d)
-
     rational temp;
     temp.numerator = numerator * x.denominator - denominator * x.numerator;
     temp.denominator = denominator * x.denominator;
@@ -276,8 +271,6 @@ rational rational::mul(rational x, bool reduce)
 
 rational rational::div(rational x, bool reduce)
 {
-    //(a/b) / (c/d) = (a * d) / (c * b)
-
     rational temp;
     temp.numerator = numerator * x.denominator;
     temp.denominator = x.numerator * denominator;
