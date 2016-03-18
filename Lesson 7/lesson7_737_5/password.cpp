@@ -7,15 +7,15 @@ namespace
     string password;
     bool isValid()
     {
-        int alph_count = 0;
+        int alpha_count = 0;
         for (int i = 0; i < password.size(); i++)
         {
             if (isalpha(password[i]))
             {
-                alph_count++;
+                alpha_count++;
             }
         }
-        return (password.size() >= 8 && alph_count != password.size());
+        return (password.size() >= 8 && alpha_count != password.size());
     }
 }
 

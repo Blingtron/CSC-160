@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    cout << "The username and password test." << endl;
     Authenticate::inputUserName();
     cout << "Your user name is: " << Authenticate::getUserName() << endl;
     Authenticate::inputPassword();
