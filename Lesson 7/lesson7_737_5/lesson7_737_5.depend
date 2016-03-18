@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1458329086 source:c:\users\skirk\documents\github\csc-160\lesson 7\lesson7_737_5\main.cpp
+	"user.h"
+	"password.h"
+
+1458329430 c:\users\skirk\documents\github\csc-160\lesson 7\lesson7_737_5\user.h
+	<iostream>
+
+1458327473 source:c:\users\skirk\documents\github\csc-160\lesson 7\lesson7_737_5\user.cpp
+	<string>
+	<iostream>
+	"user.h"
+
+1458329307 source:c:\users\skirk\documents\github\csc-160\lesson 7\lesson7_737_5\password.cpp
+	<string>
+	<iostream>
+	"password.h"
+
+1458329418 c:\users\skirk\documents\github\csc-160\lesson 7\lesson7_737_5\password.h
+	<iostream>
+
