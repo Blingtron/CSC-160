@@ -176,6 +176,7 @@ bool operator==(const Rational& rational1, const Rational& rational2)
     return rational1.numerator * rational2.denominator == rational2.numerator * rational1.denominator;
 }
 
+
 void Rational::reduce()
 {
     if (denominator == 0)
@@ -191,7 +192,6 @@ void Rational::reduce()
     int a = abs(numerator);
     int b = denominator;
     int temp;
-
     if (b > a)
     {
         temp = a;

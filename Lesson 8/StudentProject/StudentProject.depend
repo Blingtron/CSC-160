@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1459802264 source:c:\users\skirk\documents\github\csc-160\lesson 8\studentproject\student.cpp
+	<string>
+	<iostream>
+	"Student.h"
+	"StudentException.h"
+
+1319039852 c:\users\skirk\documents\github\csc-160\lesson 8\studentproject\student.h
+	<string>
+
+1318980216 c:\users\skirk\documents\github\csc-160\lesson 8\studentproject\studentexception.h
+	<string>
+
+1319036432 source:c:\users\skirk\documents\github\csc-160\lesson 8\studentproject\studentexception.cpp
+	<string>
+	"StudentException.h"
+
+1459802199 source:c:\users\skirk\documents\github\csc-160\lesson 8\studentproject\main.cpp
+	<iostream>
+	"Student.h"
+	"StudentException.h"
+

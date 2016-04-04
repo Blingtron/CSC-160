@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1458333533 source:c:\users\skirk\documents\github\csc-160\lesson 7\lesson_7_738_2\main.cpp
+	"rational.h"
+
+1458333543 c:\users\skirk\documents\github\csc-160\lesson 7\lesson_7_738_2\rational.h
+	<iostream>
+	<cstdlib>
+	<cmath>
+
+1458333533 source:c:\users\skirk\documents\github\csc-160\lesson 7\lesson_7_738_2\rational.cpp
+	"rational.h"
+

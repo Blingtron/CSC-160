@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1459802919 source:c:\users\skirk\documents\github\csc-160\lesson 8\digital time\digitaltime.cpp
+	<iostream>
+	<cctype>
+	<cstdlib>
+	"DigitalTime.h"
+	"DigitalTimeException.h"
+
+1319062902 c:\users\skirk\documents\github\csc-160\lesson 8\digital time\digitaltime.h
+	<iostream>
+
+1459803380 c:\users\skirk\documents\github\csc-160\lesson 8\digital time\digitaltimeexception.h
+	<iostream>
+	<string>
+
+1459585725 source:c:\users\skirk\documents\github\csc-160\lesson 8\digital time\digitaltimeexception.cpp
+	"DigitalTimeException.h"
+
+1459803662 source:c:\users\skirk\documents\github\csc-160\lesson 8\digital time\main.cpp
+	"DigitalTime.h"
+	"DigitalTimeException.h"
+
