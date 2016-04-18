@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1460931121 source:c:\users\skirk\documents\github\csc-160\exam2\project 2\lesson9-699-8.cpp
+	"List.h"
+
+1460931486 c:\users\skirk\documents\github\csc-160\exam2\project 2\list.h
+	<iostream>
+	<cstdlib>
+
+1461009091 source:c:\users\skirk\documents\github\csc-160\lesson 9\project 2\lesson9-699-8.cpp
+	"List.h"
+
+1461006557 c:\users\skirk\documents\github\csc-160\lesson 9\project 2\list.h
+	<iostream>
+	<cstdlib>
+
+1461009091 source:c:\users\skirk\documents\github\csc-160\lesson 9\project 2\list.cpp
+	"List.h"
+
