@@ -70,35 +70,39 @@ private:
 
 int main()
 {
-    srand(time(0));
-
     VectorDouble test1(50);
-    VectorDouble test2(50);
-    for (int i = 0; i < 50; i++)
-    {
-        test2.push_back(2);
-        test1.push_back(2);
 
-    }
-    for (int i = 0; i < 50; i++)
+    test1.push_back(12.1);
+    test1.push_back(15.8);
+    test1.push_back(19.1);
+    test1.push_back(222.1);
+    test1.push_back(90.7);
+    test1.push_back(2);
+
+    cout << "Testing member functions of VectorDouble class:\n";
+    cout << "Capacity of VectorDouble test1: " << test1.capacity() << endl;
+    cout << "Size of VectorDouble test1: " << test1.size() << endl;
+    cout << "Values in test1:\n";
+    for (int i = 0; i < test1.size(); i++)
     {
-        cout << test2.value_at(i) << " ";
+        cout << "value at index " << i << " = " << test1.value_at(i) << endl;
     }
 
-    if (test1 == test2)
+    cout << "Changing value at index 2 in test 1.\n";
+    test1.change_value_at(12.24, 2);
+    cout << "The value at index 2 is now: " << test1.value_at(2);
+    cout << "Resizing test1...";
+    test1.resize(20);
+    cout << "test1 is now size " << test1.size() << endl;
+    cout << "testing copy constructor (copying test1 to copy1)...";
+
+    VectorDouble copy1(test1);
+    cout << "copy1:" << endl;
+    for (int i = 0; i < copy1.size(); i++)
     {
-        cout << "true";
+        cout << copy1.value_at(i);
     }
-    else
-    {
-        cout << "false";
-    }
-    test1.reserve(500);
-    cout <<endl<< "test1 max_count: " << test1.capacity() << endl;
-    cout << "test1 size: " << test1.size();
-    test1.resize(22);
-    cout <<endl<< " after resizing: test1 max_count: " << test1.capacity() << endl;
-    cout << "test1 size: " << test1.size();
+
 }
 
 // ** VectorDouble CLASS MEMBER FUNCTION DEFINITIONS ** //
@@ -117,12 +121,14 @@ VectorDouble::VectorDouble(int arr_size)
 }
 VectorDouble::VectorDouble(const VectorDouble& duplicate)
 {
-    max_count = duplicate.max_count;
-    count = duplicate.count;
-    for (int i = 0; i < duplicate.count; i++)
+    double *temp = new double[duplicate.count];
+
+    count = duplicate.size();
+    for (int i = 0; i < duplicate.size(); i++)
     {
-        arr[i] = duplicate.arr[i];
+        temp[i] = duplicate.value_at(i);
     }
+    arr = temp;
 }
 VectorDouble::~VectorDouble()
 {
@@ -224,9 +230,8 @@ double VectorDouble::value_at(int i)
     if (i < 0 || i > count)
     {
         cout << "invalid value_at parameter. Either less than zero or greater than vector size.\n";
-        return;
     }
-    return arr[i];
+    else return arr[i];
 }
 void VectorDouble::change_value_at(double d, int i)
 {
@@ -234,4 +239,5 @@ void VectorDouble::change_value_at(double d, int i)
     {
         cout << "invalid change_value_at parameter, either less than zero or greater than vector size.\n";
     }
+    else arr[i] = d;
 }
